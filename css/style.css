@@ -3,19 +3,128 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contenedor-principal{
+    /* Grid */
+    width: 100vw;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+    "nav header"
+    "nav main"
+    "nav main"
+    "nav footer"    
+    ;
+    grid-column-gap:20px;
+    grid-row-gap:20px; 
+}
+
+.contenedor{
+    /* Grid */
+    width: 100%;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    padding:  40px 0;
+   
+    /* display:flex;
+    grid-template-columns: 1fr;
+    gap: 20px; */
+}
+
+.contenedor-grupos{
+    /* display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 20px;
+    
+}
+
+.contenedor-canciones{
+    /* Grid */
+     display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    gap: 20px; 
+    
+    
+}
+
+.card{
+    border-radius: 10px;
+    min-height: 400px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(14, 13, 13);
+}
+
+.card .textos {
+    /* Flexbox */
+    height: 100%;
+   /* display: flexbox;
+     flex-direction: column;
+    justify-content: space-between;  */
+    text-align: center;
+    vertical-align: text-bottom;
+      
+}
+
+
+header{
+    background-color: blue;
+    grid-area: header;
+}
+
+main{
+    background-color: blue;
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ;
+}
+
+nav{
+    background-color: blue;
+    grid-area: nav;
+}
+
+footer{
+    background-color: blue;
+    grid-area: footer;
+}
+
+
+.titulos{
+    font-weight: bold;
+}
+
 
 .inicio{
     background-color: rgb(41, 151, 185);
 }
 
 .fondo-generico {
-    background-color: rgb(88, 213, 202);
+    background-color: rgb(52, 59, 59);
 }
 
-
-.texto-negrita{
-    font-weight: bold;
-}
 
 ul{
     list-style-type: none;
@@ -26,7 +135,7 @@ ul{
   list-style-type: none;
 }
 
-
+/*  
 section p{
 color: brown;
 font-size:20px;
@@ -48,10 +157,10 @@ background-color: yellow;
 overflow: hidden;
 /* overflow-x: hidden; */
 /* overflow-x: scroll; */
-
+/*
 }
 
-
+*/
 
 .color-planes{
     background-color: rgb(106, 212, 106);
