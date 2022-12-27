@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registrarse Muvey's</title>
+</head>
+<body>
+    <header class="inicio" class="fondo-generico texto-negrita">
+
+        <div>
+            <a href="../index.html"><img src="/enproceso" alt="LogoDeMusica">Muvey's</a>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="POST">
+
+            <div>
+            <p>Para continuar, inicia sesión en Muvey's</p> 
+                <fieldset>
+                    <legend>DATOS PERSONALES</legend>
+                    <div><label for="email">¿Cúal es tu email</label></div>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email">
+
+                    <div><label for="email">Confirma el email</label></div>
+                    <input type="email" id="confirmar" name="confirmar" placeholder="Vuelve a introducir tu email">
+                    
+                    <div><label for="password">Crea una contraseña</label></div>
+                    <input type="password" id="password" name="password" placeholder="Crea una contraseña">
+
+                    <div><label for="text">¿Cómo quieres que te llamemos?</label></div>
+                    <input type="text" id="displayname" name="displayname" placeholder="Introduce tu nombre de perfil">
+
+                    <div><label for="day">Día</label></div>
+                    <input type="text" id="day" name="day" inputmode="numeric" maxlength="2" placeholder="DD">
+
+                    <div><label for="day">Mes</label></div>
+                    <input type="select" id="month" name="month" class="select-month" placeholder="Mes">
+
+                    <div><label for="day">Año</label></div>
+                    <input type="text" id="year" name="year" inputmode="numeric" maxlength="4" placeholder="AAAA">
+
+                    <div><label for="text">¿Cúal es tu sexo?</label></div>
+                    <div><input type="radio" id="opcion_masculino" name="masculino"></div>
+                    <label for="opcion_masculino">Hombre</label>
+
+                    <div><input type="radio" id="opcion_mujer" name="mujer"></div>
+                    <label for="opcion_mujer">Mujer</label>
+
+                    <div><input type="radio" id="opcion_no_binario" name="no-binario"></div>
+                    <label for="opcion_no_binario">No Binario</label>
+
+                    <div><input type="radio" id="opcion_otro" name="otro"></div>
+                    <label for="opcion_otro">Otro</label>
+
+                    <div><input type="radio" id="opcion_no_aclarado" name="no-aclarado"></div>
+                    <label for="opcion_no_aclarado">Prefiero no aclararlo</label>
+
+                    <div><input type="button" value="Registrate"/> </div>
+
+                    <p>¿Ya tienes cuenta?</p> 
+                    <div><a href="./Iniciar-sesion.html">Inicia sesión</a></div>
+
+                </fieldset>
+            </div>   
+    
+        </form>
+   
+    </main>
+
+</body>
+
+</html>
