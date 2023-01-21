@@ -1,0 +1,41 @@
+.contenedor-general .navbar {
+
+    background: rgb(0, 0, 0);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.contenedor-navbar {
+    /* width: 100%;
+    height: 8rem; */
+    display: grid;
+    /* grid-gap: 20px; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr ; */
+    justify-items: auto;
+    align-items: start;
+
+    /* justify-content: space-between; */
+}
+
+.navbar-buttom {
+    width: 30rem;
+    height: 8rem;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    background: rgb(10, 10, 10);
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.navbar-imagen {
+    justify-items: auto;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
